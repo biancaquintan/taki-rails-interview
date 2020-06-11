@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
-  belongs_to :business
-
-  validates :name,  presence: true
-  validates :price,  presence: true
+  validates :name, presence: true
+  validates :price, presence: true
   validates :business_id, presence: true
+  
+  belongs_to :business
 end
