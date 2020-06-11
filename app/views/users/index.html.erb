@@ -1,0 +1,21 @@
+<% provide(:title, "Users") %>
+
+<h1>Listing users</h1>
+
+<table class="item-list">
+  <tr>
+    <th>Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Amount Businesses</th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.email %></td>
+      <td><%= Business.where(user_id: user.id).count %></td>
+    </tr>
+  <% end %>
+</table>

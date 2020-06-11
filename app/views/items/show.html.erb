@@ -1,0 +1,23 @@
+<h1>Item <%= @items.id %></h1>
+
+<p>
+  <label>Name</label>
+  <input type="text" value="<%= @items.name %>" disabled>
+</p>
+
+<p>
+  <label>Price</label>
+  <input type="text" value="<%= @items.price %>" disabled>
+</p>
+
+<p>
+  <label>Business</label>
+  <input type="text" value="<%= @items.business.name %>" disabled>
+</p>
+
+<p>
+  <label>Item Id</label>
+  <input type="text" value="<%= @items.id %>" disabled>
+</p>
+
+<%= link_to 'Back', items_path %>

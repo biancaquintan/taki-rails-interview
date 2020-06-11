@@ -1,0 +1,23 @@
+<h1>Edit Business</h1>
+
+<%= form_for @business do |f| %>
+
+  <p>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :address %> <br>
+    <%= f.text_field :address %>  
+  </p>
+
+  <p>
+    <%= f.label :city %> <br>
+    <%= f.text_field :city %>  
+  </p>
+
+  <%= f.submit "Update business" %>
+<% end %>
+
+<%= link_to 'Voltar', business_index_path %>

@@ -1,0 +1,18 @@
+<h1>Edit Item</h1>
+
+<%= form_for @items do |f| %>
+
+  <p>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :price %> <br>
+    <%= f.text_field :price %>  
+  </p>
+
+  <%= f.submit "Update item" %>
+<% end %>
+
+<%= link_to 'Voltar', items_path %>
