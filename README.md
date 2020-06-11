@@ -28,7 +28,7 @@ _Please make sure that you also include the unit tests for the models and contro
 
 1. `bundle install`
 2. `rake db:migrate`
-3. `rake db:seed`
+3. `rake db:seed` <- deprecated
 4. `rails s`
 
 ## Or...
