@@ -1,0 +1,35 @@
+<% provide(:title, "Bussiness") %>
+
+<h1>Listing your bussiness</h1>
+
+<table class="item-list">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>
+      <%= link_to new_business_path do %>
+        <button name="add">Add</button>
+      <% end %>
+    </th>
+  </tr>
+
+  <% @businesses.each do |business| %>
+    <tr>
+      <td><%= business.name %></td>
+      <td><%= business.address %></td>
+      <td><%= business.city %></td>
+      <td>
+        <%= link_to business_path(business) do %>
+          <button name="delete">Show</button>
+        <% end %>
+        <%= link_to edit_business_path(business) do %>
+          <button name="edit">Edit</button>
+        <% end %>
+        <%= link_to business, method: :delete, data: { confirm: "Are you sure?" } do %>
+          <button name="delete">Delete</button>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
