@@ -8,5 +8,7 @@ class User < ActiveRecord::Base
     validates :first_name
     validates :last_name
     validates :email
+    validates :password
+    validates :password_confirmation
   end
 end
