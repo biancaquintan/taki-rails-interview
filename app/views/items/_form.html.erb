@@ -18,6 +18,6 @@
 
   <%= f.label :business_id %>
   <%= f.collection_select :business_id, Business.all, :id, :name, {prompt: 'Select a business'}, {class: 'form-control'} %>
-
+  <br>
   <%= f.submit "#{item.new_record? ? 'Create' : 'Edit'} Item", class: "btn btn-primary" %>
 <% end %>
