@@ -24,6 +24,7 @@ group :development, :test do
   gem 'pry-nav', '0.2.4'
   gem 'pry-rails', '0.3.3'
   gem 'pry-rescue', '1.4.2'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
