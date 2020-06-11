@@ -177,7 +177,6 @@ DEPENDENCIES
   pry-rescue (= 1.4.2)
   rails (= 4.2.5.1)
   rake (= 10.4.2)
-  rb-inotify (= 0.9.7)
   sass-rails (= 5.0.4)
   spring (= 1.7.2)
   sprockets (~> 3.6.3)

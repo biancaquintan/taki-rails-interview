@@ -23,7 +23,7 @@ gem 'minitest', '5.1'
 gem 'nokogiri', '1.6.8'
 gem 'autoprefixer-rails', '6.0.0'
 gem 'ffi', '1.10.0'
-gem 'rb-inotify', '0.9.7'
+# gem 'rb-inotify', '0.9.7'
 
 group :development, :test do
   # Debugger
