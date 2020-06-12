@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_businesses, only: [:new, :create, :edit, :update]
+  
   def index
     # List all of the Items that are owned by the logged in User's Business
     if current_business.present?
@@ -49,6 +50,10 @@ class ItemsController < ApplicationController
 
     def set_item
       @item = Item.find(params[:id])
+    end
+
+    def set_businesses
+      @businesses = Business.where(user_id: current_user.id)
     end
 
     def item_params

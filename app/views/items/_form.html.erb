@@ -17,7 +17,7 @@
   <%= f.text_field :price, class: 'form-control' %>
 
   <%= f.label :business_id %>
-  <%= f.collection_select :business_id, Business.all, :id, :name, {prompt: 'Select a business'}, {class: 'form-control'} %>
+  <%= f.collection_select :business_id, @businesses, :id, :name, {}, {class: 'form-control'} %>
   <br>
   <%= f.submit "#{item.new_record? ? 'Create' : 'Edit'} Item", class: "btn btn-primary" %>
 <% end %>
